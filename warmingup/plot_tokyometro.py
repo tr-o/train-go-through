@@ -5,10 +5,10 @@ import numpy as np
 import networkx as nx
 
 # csvファイルからpandsa形式のテーブルを作成
-station = pd.read_csv("ekidata\station20250529free.csv")
-join = pd.read_csv("ekidata\join20250430.csv")
-line = pd.read_csv("ekidata\line20250529free.csv")
-company = ("ekidata\company20250529.csv")
+station = pd.read_csv(r"ekidata\station20250529free.csv")
+join = pd.read_csv(r"ekidata\join20250430.csv")
+line = pd.read_csv(r"ekidata\line20250529free.csv")
+company = (r"ekidata\company20250529.csv")
 
 # 全国の駅から東京メトロの駅のみ抽出する 東京メトロ...company_cd == 18
 metro = station[["station_cd", "station_name", "line_cd", "lon", "lat"]]
